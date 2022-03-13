@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import styles from './navigation.module.css'
 
 export const Navigation = () => (
@@ -6,13 +7,19 @@ export const Navigation = () => (
 
     <ul className={styles.menu}>
       <li>
-        <p>Markets</p>
+        <Link to="/">
+          <p>Live Candlestick Websocket</p>
+        </Link>
       </li>
       <li>
-        <p>Trade</p>
+        <Link to="/raw">
+          <p>Graph Using 39924 Data Points</p>
+        </Link>
       </li>
       <li>
-        <p>Dirivaties</p>
+        <Link to="/raw-hardware">
+          <p>Graph Using 39924 Data Points (Hardware Acceleratted)</p>
+        </Link>
       </li>
     </ul>
   </div>

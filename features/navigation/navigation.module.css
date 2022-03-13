@@ -1,0 +1,21 @@
+.navigation {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 100px;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 50px 0;
+  align-items: center;
+}
+
+.navigation .menu {
+  display: flex;
+  gap: 30px;   
+  list-style: none;
+}
+
+.navigation .menu p {
+  margin: 0;
+  padding: 0;
+}

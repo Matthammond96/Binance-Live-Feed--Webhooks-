@@ -3,12 +3,14 @@ import { Provider } from 'react-redux';
 import { Kline } from '../kline'
 import { store } from '../../store/store'
 
-export function Controller () {
+function Controller ({raw = false, hardware = false}) {  
   return (
     <div className="controller">
       <Provider store={store}>
-        <Kline />  
+        <Kline raw={raw} hardware={hardware} />  
       </Provider>
     </div>
   )
 }
+
+export default React.memo(Controller)
